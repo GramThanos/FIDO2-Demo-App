@@ -1,0 +1,22 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm" style="padding-top: 25px;padding-bottom: 25px;">
+			<h4>Dashboard</h4>
+			<h6>Welcome <%= session[:user_name] %>!</h6>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+						<th scope="row">Username</th>
+						<td><%= session[:user_name] %></td>
+					</tr>
+					<tr>
+						<th scope="row">Email</th>
+						<td><%= session[:user_email] %></td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="<%= url_for({:action => 'manage'}) %>" class="btn btn-primary">Manage your keys</a>
+		</div>
+	</div>
+</div>

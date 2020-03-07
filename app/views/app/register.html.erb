@@ -1,0 +1,39 @@
+
+<div class="container">
+	<div class="row">
+		<!-- Login -->
+		<div class="col-12" style="padding-top: 25px;padding-bottom: 25px;">
+			<h4>Register Form</h4>
+			<form method="POST">
+				<div class="form-group">
+					<label for="name">Username</label>
+					<input type="text" class="form-control" id="name" name="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password">
+				</div>
+				<div class="form-group">
+					<label for="password">Password Confirm</label>
+					<input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
+				</div>
+				<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+				<% if @message_error %>
+					<div class="alert alert-danger" role="alert">
+						<%= @message_error %>
+					</div>
+				<% end %>
+				<% if @message_success %>
+					<div class="alert alert-success" role="alert">
+						<%= @message_success %>
+					</div>
+				<% end %>
+				<button type="submit" class="btn btn-primary" id="login-btn">Register</button>
+			</form>
+		</div>
+	</div>
+</div>

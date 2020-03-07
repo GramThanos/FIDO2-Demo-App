@@ -1,0 +1,2 @@
+module FidoHelper
+end
