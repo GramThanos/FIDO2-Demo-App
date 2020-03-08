@@ -1,6 +1,8 @@
 # FIDO2 Demo App
 A demo Ruby on Rails application featuring FIDO2 password-less login
 
+![Preview](https://raw.githubusercontent.com/GramThanos/FIDO2-Demo-App/master/preview.gif)
+
 ___
 
 
